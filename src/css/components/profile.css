@@ -1,7 +1,7 @@
 /* ---Profile--- */
 .profile-photo {
   width: 2.7rem;
-  min-height: 2.7rem;
+  min-width: 2.7rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 0.16rem solid var(--color-primary);
@@ -14,3 +14,13 @@
   height: 100%;
   object-fit: cover;
 }
+
+.profile h2 {
+  line-height: 1.2rem;
+}
+
+.profile p {
+  font-size: 0.7rem;
+  color: var(--color-gray);
+}
+

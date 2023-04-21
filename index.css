@@ -14,5 +14,12 @@
 @import "src/css/frames/nav/nav.css";
 @import "src/css/frames/main/main.css";
 
+/* left */
 @import "src/css/frames/main/left/main_left.css";
 @import "src/css/frames/main/left/main_left_sidebar.css";
+
+/* middle */
+@import "src/css/frames/main/middle/main_middle.css";
+@import "src/css/frames/main/middle/main_middle_highline.css";
+@import "src/css/frames/main/middle/main_middle_post.css";
+@import "src/css/frames/main/middle/main_middle_card.css";
