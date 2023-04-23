@@ -25,10 +25,9 @@ import {
   middle_form,
   middle_form_img,
   middle_form_input_text,
-  middle_card,
-  create_news,
-  create_profile_structure,
-  create_picture_structure
+  create_card_list,
+  create_friend_list,
+  create_request_list
 } from "./src/js/common"
 
 /* Nav */
@@ -60,24 +59,14 @@ middle_highline_description_img.forEach((element, index) => {
 middle_form_img.src = profile.img_src
 middle_form_input_text.placeholder = `What's on your mind, ${profile.name}?`
 
+/* Main Middle Card*/
+const cardDom = document.querySelector('.card')
+create_card_list(cardDom, cards)
 
-cards.forEach(element => {
+/* Main Right Message */
+const messageDom = document.querySelector('.friend-list')
+create_friend_list(messageDom, message)
 
-  /* doms = {
-    info =>  整体的节点
-    info_profile => profile 的节点
-    info_picture => picture 的节点
-    info_control => control 的节点
-    info_comment => comment 的节点
-  } */
-  // 创造所有需要的节点
-  const doms = create_news()
-  // 把节点的整合放到middle_card的最后 
-  middle_card.appendChild(doms.info)
-
-  create_profile_structure(doms.info_profile, element.profile)
-  create_picture_structure(doms.info_picture, element.picture)
-  // create_control_structure(doms.info_control, element.control)
-  // create_comment_structure(doms.info_comment, element.comment)
-
-})
+/* Main Right Request */
+const requestDom = document.querySelector('.request-list')
+create_request_list(requestDom, request)
