@@ -1,7 +1,7 @@
 import "./index.css"
 
 
-import { cards, highline, profile, message, request } from "./data/db.json"
+import { cards, highline, profile, message, request } from "@/js/database"
 
 import {
   navbar,
